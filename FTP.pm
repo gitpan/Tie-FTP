@@ -6,8 +6,10 @@ use strict;
 use warnings;
 
 use File::Temp ();
+use URI;
+use Net::FTP;
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 sub TIEHANDLE { # uri object || uri || netftp object, path
 	my $pkg = shift || return undef;
@@ -166,6 +168,12 @@ Yuval Kogman <nothingmuch@woobling.org>
 
 =head1 COPYRIGHT
 
-peh.
+
+This program is free software licensed under the...
+
+        The MIT License
+
+The full text of the license can be found in the
+LICENSE file included with this module.
 
 =cut
